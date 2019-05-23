@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--设置视口-->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <!--导入css-->
+    <link rel="stylesheet" href="./css/bootstrap.css"/>
+    <!--导入3个js,有属性要求-->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <style>
+        /*1.header：网页头部-*/
+            .header{
+                width:90%;
+                margin-left: 30px;
+            }
+            .header .top-int{
+                width:100%;
+                border:1px solid #F47115;
+                border-radius: 3px;
+                outline: 0;
+                padding: 5px;
+
+            }
+            .top-int-cart{
+                position:relative;
+            }
+            .top-int-cart>img{
+                position: absolute;
+                top:30%;
+                left:85%;
+            }
+            .shop_cart_div{
+                width: 3rem;height:2.5rem;
+                line-height: 2.5rem;
+                text-align: center;
+                background-color: #9B1F20;
+                border-radius: 5px 0 0 5px;
+            }
+            .shop_cart_div>img{
+                width:60%;
+            }
+            .shop_cart_txt{
+                width: 6.8rem;height:2.5rem;
+                line-height: 2.5rem;
+                text-align: center;
+                font-size:0.57rem;
+                font-weight: bold;
+                color:#fff;
+                background-color: #DE2C2E;
+                border-radius: 0 5px 5px 0;
+            }
+        /*2.折叠导航栏*/
+            a.navbar-brand.text-white{
+                font-size:1rem;
+            }
+            .navbar.navbar-expand-md a{
+                width:100px;height:50px;
+                line-height: 50px;
+                text-align: center;
+            }
+            .navbar.navbar-expand-md a:hover{
+                background-color: rgba(255,255,255,.3);
+            }
+        /*3.焦点轮播图*/
+        /*轮播图：左右按钮样式*/
+        .carousel-control-prev,.carousel-control-next{
+            width:4%;height:20%;
+            background: #aaa;
+            border-radius: 0.25rem;
+            top:40%;
+        }
+        /*轮播指示器*/
+        .carousel-indicators li{
+            width: 0.75rem;
+            height: 0.75rem;
+            background: #fff;
+            border-radius: 50%;
+            margin:0 4px;
+        }
+        .carousel-indicators .active {
+            background-color: #FF8800;
+        }
+    </style>
+</head>
+<body>
+<!--1.header：网页头部-->
+<iframe src="header.html" frameborder="0" scrolling="no"></iframe>
+<div class="container">
+    <!--2.折叠导航栏-->
+    <div class="navbar navbar-expand-md bg-danger p-0 navbar-dark">
+        <a href="#" class="navbar-brand text-white p-0 m-0">首页</a>
+        <!--折叠区域的激活按钮-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#content">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="content" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link text-white p-0">产品中心</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-0">新鲜水果</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-0">海鲜水产</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-0">猪牛羊肉</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-0">速冻速食</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-0">禽类蛋品</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-0">新鲜蔬菜</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!--3.焦点轮播图-->
+    <div class="carousel" data-ride="carousel" id="demo">
+        <!--1.轮播图片放在一个div中-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/carousel_1.jpg" class="w-100"/>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel_2.jpg" class="w-100"/>
+            </div>
+        </div>
+        <!--2.左右箭头-->
+        <a href="#demo" data-slide="prev" class="carousel-control-prev ml-2">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#demo" data-slide="next" class="carousel-control-next mr-2">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        <!--3.轮播指示器-->
+        <ul class="carousel-indicators">
+            <li data-slide-to="0" data-target="#demo" class="active"></li>
+            <li data-slide-to="1" data-target="#demo"></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

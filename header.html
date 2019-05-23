@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--设置视口-->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <!--导入css-->
+    <link rel="stylesheet" href="./css/bootstrap.css"/>
+    <!--导入3个js,有属性要求-->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <style>
+        .breadcrumb-item + .breadcrumb-item::before {
+            content:"";
+        }
+        .form-control{
+            border:1px solid #0AA1ED;
+            border-radius: 0;
+        }
+        .form-control:focus {
+            box-shadow: 0 0 0 0;
+        }
+        .breadcrumb-item>a{
+            color:#808080;
+            font-size:12px;
+        }
+        .breadcrumb-item>a:hover{
+            text-decoration: none;
+        }
+        .breadcrumb-item:first-child{
+            background-color: #9B1F20;
+            border-radius: 5px 0 0 5px;
+            height:40px;width:40px;
+            line-height: 40px;
+            text-align: center;
+        }
+        .breadcrumb-item:last-child{
+            background-color: #DE2C2E;
+            border-radius: 0 5px 5px 0;
+
+        }
+        .breadcrumb-item:last-child>a{
+            display: inline-block;
+            color:white;
+            height:40px;width:70px;
+            line-height: 40px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-lg-3 col-sm-12">
+            <a href="#" class="navbar-brand">
+                <img src="img/header/logo.png" alt=""/>
+            </a>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <div class="form-inline">
+                <input type="text" class="form-control p-1 w-50 ml-5 mt-3"/>
+                <img src="img/searchbox/search.png" alt="" class="mt-3"/>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-12 p-0">
+            <ul class="breadcrumb bg-white">
+                <li class="breadcrumb-item">
+                    <a href="#">
+                        <img src="img/shop_car.png" alt=""/>
+                    </a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">
+                        我的购物车
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

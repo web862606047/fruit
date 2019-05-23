@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--设置视口-->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <!--导入css-->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <!--导入3个js,有属性要求-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        /*3.焦点轮播图*/
+        /*轮播图：左右按钮样式*/
+        .carousel-control-prev,.carousel-control-next{
+            width:4%;height:20%;
+            background: #aaa;
+            border-radius: 0.25rem;
+            top:40%;
+        }
+        /*轮播指示器*/
+        .carousel-indicators li{
+            width: 0.75rem;
+            height: 0.75rem;
+            background: #fff;
+            border-radius: 50%;
+            margin:0 4px;
+        }
+        .carousel-indicators .active {
+            background-color: #FF8800;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!--3.焦点轮播图-->
+    <div class="carousel" data-ride="carousel" id="demo">
+        <!--1.轮播图片放在一个div中-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/carousel_1.jpg" class="w-100"/>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carousel_2.jpg" class="w-100"/>
+            </div>
+        </div>
+        <!--2.左右箭头-->
+        <a href="#demo" data-slide="prev" class="carousel-control-prev ml-2">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#demo" data-slide="next" class="carousel-control-next mr-2">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+        <!--3.轮播指示器-->
+        <ul class="carousel-indicators">
+            <li data-slide-to="0" data-target="#demo" class="active"></li>
+            <li data-slide-to="1" data-target="#demo"></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
