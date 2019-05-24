@@ -11,84 +11,12 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <style>
-        /*1.header：网页头部-*/
-            .header{
-                width:90%;
-                margin-left: 30px;
-            }
-            .header .top-int{
-                width:100%;
-                border:1px solid #F47115;
-                border-radius: 3px;
-                outline: 0;
-                padding: 5px;
+    <link rel="stylesheet" href="./css/index.css"/>
 
-            }
-            .top-int-cart{
-                position:relative;
-            }
-            .top-int-cart>img{
-                position: absolute;
-                top:30%;
-                left:85%;
-            }
-            .shop_cart_div{
-                width: 3rem;height:2.5rem;
-                line-height: 2.5rem;
-                text-align: center;
-                background-color: #9B1F20;
-                border-radius: 5px 0 0 5px;
-            }
-            .shop_cart_div>img{
-                width:60%;
-            }
-            .shop_cart_txt{
-                width: 6.8rem;height:2.5rem;
-                line-height: 2.5rem;
-                text-align: center;
-                font-size:0.57rem;
-                font-weight: bold;
-                color:#fff;
-                background-color: #DE2C2E;
-                border-radius: 0 5px 5px 0;
-            }
-        /*2.折叠导航栏*/
-            a.navbar-brand.text-white{
-                font-size:1rem;
-            }
-            .navbar.navbar-expand-md a{
-                width:100px;height:50px;
-                line-height: 50px;
-                text-align: center;
-            }
-            .navbar.navbar-expand-md a:hover{
-                background-color: rgba(255,255,255,.3);
-            }
-        /*3.焦点轮播图*/
-        /*轮播图：左右按钮样式*/
-        .carousel-control-prev,.carousel-control-next{
-            width:4%;height:20%;
-            background: #aaa;
-            border-radius: 0.25rem;
-            top:40%;
-        }
-        /*轮播指示器*/
-        .carousel-indicators li{
-            width: 0.75rem;
-            height: 0.75rem;
-            background: #fff;
-            border-radius: 50%;
-            margin:0 4px;
-        }
-        .carousel-indicators .active {
-            background-color: #FF8800;
-        }
-    </style>
 </head>
 <body>
 <!--1.header：网页头部-->
-<iframe src="header.html" frameborder="0" scrolling="no"></iframe>
+<iframe src="header.html" frameborder="0" scrolling="no" class="my_header" width="100%"></iframe>
 <div class="container">
     <!--2.折叠导航栏-->
     <div class="navbar navbar-expand-md bg-danger p-0 navbar-dark">
@@ -134,6 +62,8 @@
             <li data-slide-to="1" data-target="#demo"></li>
         </ul>
     </div>
+    <!--页面底部-->
+    <iframe src="footer.html" frameborder="0" scrolling="no" width="100%"></iframe>
 </div>
 </body>
 </html>
