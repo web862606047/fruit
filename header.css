@@ -1,0 +1,36 @@
+.breadcrumb-item + .breadcrumb-item::before {
+    content:"";
+}
+.form-control{
+    border:1px solid #0AA1ED;
+    border-radius: 0;
+}
+.form-control:focus {
+    box-shadow: 0 0 0 0;
+}
+.breadcrumb-item>a{
+    color:#808080;
+    font-size:12px;
+}
+.breadcrumb-item>a:hover{
+    text-decoration: none;
+}
+.breadcrumb-item:first-child{
+    background-color: #9B1F20;
+    border-radius: 5px 0 0 5px;
+    height:40px;width:40px;
+    line-height: 40px;
+    text-align: center;
+}
+.breadcrumb-item:last-child{
+    background-color: #DE2C2E;
+    border-radius: 0 5px 5px 0;
+}
+.breadcrumb-item:last-child>a{
+    display: inline-block;
+    color:white;
+    height:40px;width:70px;
+    line-height: 40px;
+    text-align: left;
+}
+
